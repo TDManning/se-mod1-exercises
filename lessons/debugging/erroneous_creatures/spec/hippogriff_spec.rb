@@ -1,4 +1,5 @@
 require './lib/hippogriff'
+require 'pry'
 
 RSpec.describe Hippogriff do
   it "has a name" do
@@ -34,7 +35,6 @@ RSpec.describe Hippogriff do
   it "when it flies it collects a unique moonrock" do
     hippogriff = Hippogriff.new("jane", :magenta)
     rock = Moonstone.new("sparkly")
-
     hippogriff.fly(rock)
 
     expect(hippogriff.moonrocks.count).to eq(1)
@@ -43,7 +43,7 @@ RSpec.describe Hippogriff do
 
   it "when created the moonrock is not magical" do
     rock = Moonstone.new("sparkly")
-
+require 'pry'; binding.pry
     expect(rock.magic?).to eq(false)
   end
 

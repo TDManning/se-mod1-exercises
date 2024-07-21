@@ -21,11 +21,13 @@ RSpec.describe 'Advanced Nested Collections' do
     expect(employees).to eq(expected)
   end
 
-  xit 'test 2' do
+  it 'test 2' do
     # Find the ingredients for pancakes
-    pancake_ingredients = _____
 
-    expected = ["Flour", "Eggs", "Milk", "Syrup"]
+    pancake_ingredients = stores[:dennys][:dishes][:ingredients]
+  #   stores.each do | |
+  # end 
+    # expected = ["Flour", "Eggs", "Milk", "Syrup"]
     expect(pancake_ingredients).to eq(expected)
   end
 

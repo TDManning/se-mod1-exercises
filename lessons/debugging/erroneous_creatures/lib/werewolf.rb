@@ -1,12 +1,12 @@
 class Werewolf
-  attr_reader :name
+  attr_reader :name,
               :location
 
   attr_accessor :human,
                 :change,
                 :werewolf
 
-  def initialize(name, location="london")
+  def initialize(name, location="London")
     @name = name
     @location = location
     @human = true
@@ -34,4 +34,8 @@ class Werewolf
     end
   end
 
+  def respond_to?
+    :change!
+  end
+ 
 end

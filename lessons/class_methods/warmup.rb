@@ -7,8 +7,11 @@ sam = User.new("Sam")
 puts sam.say_hello
 # =>
 
-# 1. What do we call #say_hello on?
-# => "An instance of the User class", "an instance"
+# 1. What do we call #say_hello on? 
+#say_hello is the method that was created and it is run on the Sam object. 
+#Sam is an innstance of the User class.
+# => "An instance of the User class", "an instance" 
+
 # 2. What do we call the method `#new` on?
 # => "A class", "the User class"
 

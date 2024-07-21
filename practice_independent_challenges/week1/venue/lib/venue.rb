@@ -17,6 +17,7 @@ class Venue
 
   def kick_out
     @patrons.push 
+
   end
 
   def over_capacity?

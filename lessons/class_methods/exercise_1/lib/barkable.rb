@@ -2,8 +2,11 @@
 
 module Barkable
 
-  def bark
+  def barking
     puts "#{@name} says, 'bark'."
   end
-
+  
 end
+
+include Barkable
+Barkable.barking

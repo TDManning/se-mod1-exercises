@@ -1,8 +1,8 @@
-#require 'barkable'
+require 'barkable' #or type require_relative "barkable.rb"
 require 'pry'
 
 class Dog
-  #include Barkable
+  include Barkable
 
   attr_reader :name, :number_of_woofs
   def initialize(name)
@@ -12,14 +12,17 @@ class Dog
   end
 
   def bark
+    # binding.pry
     #binding.pry ## What will be output here?
     "#{@name} goes Bark!"
   end
 
   def woof
-    #binding.pry ## When calling .woof on a Dog class, will this pry be hit?
-    "Woof!"
+    # binding.pry
+    #binding.pry ## When calling .woof on a Dog class, will this pry be hit? 
+    #It just gave me a number and skipped the word "Woof!" I moved "Woof!" to the last line in the method and it passed.
     @number_of_woofs += 1
+    "Woof!"
   end
 
   def self.woof
@@ -28,3 +31,5 @@ class Dog
   end
 
 end
+
+Barkable.barking

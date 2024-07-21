@@ -74,10 +74,10 @@ require 'pry'
 
 ## Example 13
 
-# def print_variable(x)
-# x = 4
-# puts x
-# end
+def print_variable(x)
+x = 4
+puts x
+end
 
-# print_variable(2)
-# puts x
+print_variable(2)
+puts x

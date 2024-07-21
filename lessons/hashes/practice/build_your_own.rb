@@ -10,6 +10,21 @@
 # 5. Add a vocalist to your hash.
 # 6. Add a drummer to your hash.
 # 7. Get all the keys in your Hash. What kind of object does that method return?
+#A list of the keys
 # 8. Get all the values in your Hash. What kind of object does that method return?
+#A list of the values
 # 9. Assign a new value to the :vocalist key of your hash.
-# 10. How has keys changed after the last step? How has values changed?
+# 10. How has keys changed after the last step? How has values changed? 
+#The value is now changed in the hash
+new_band = {
+  "bassist" => "John",
+  "vocalist" => "Mike",
+  "drummer" => "Ryan"
+}
+
+puts new_band.keys
+puts new_band.values
+
+new_band["vocalist"] = "James"
+
+puts new_band

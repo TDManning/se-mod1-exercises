@@ -8,11 +8,11 @@ RSpec.describe 'All Pattern' do
     expect(all_zeros).to eq(true)
   end
 
-  xit 'not all zeros' do
+  it 'not all zeros' do
     numbers = [0, 0, 0, 0, 1, 0, 0, 0]
     all_zeros = true
     numbers.each do |number|
-      # Your code goes here
+    all_zeros = false
     end
     expect(all_zeros).to eq(false)
   end

@@ -19,7 +19,7 @@ class Centaur
       "NO!"
     end
   end
-
+  
   def run
    @crankiness += 1
    if @crankiness < 3
