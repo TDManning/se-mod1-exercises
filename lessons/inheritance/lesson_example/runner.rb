@@ -8,4 +8,4 @@ chris = Intern.new(5)
 
 require "pry"; binding.pry
 
-# Ali, Ben, and Chris all need names and IDs in the system. Where can they get those?
+# Ali, Ben, and Chris all need names and IDs in the system. Where can they get those?ce

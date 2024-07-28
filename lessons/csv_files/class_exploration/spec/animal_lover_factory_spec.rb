@@ -1,4 +1,5 @@
 require "./lib/animal_lover_factory"
+require 'animal_lover.rb'
 
 RSpec.describe AnimalLoverFactory do 
   it "should exist" do
