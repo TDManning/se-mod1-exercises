@@ -11,8 +11,10 @@ class Dock
     @rental_log[boat] = renter
   end
 
-  def charge(boat)
-
+  def charge(boat) 
+    amount_charged = {
+      card_number: "4242424242424242",
+      amount: 60
+    }
   end
-  
 end
